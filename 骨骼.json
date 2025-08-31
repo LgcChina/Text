@@ -1,22 +1,34 @@
 {
-  "version": "1.0",
-  "last_updated": "2025-08-31",
-  "mappings": {
-    "Hips": ["hip", "hips", "Hip", "Hips", "骨盆", "pelvis", "root", "body", "腰部", "yaobu"],
-    "Spine": ["spine", "Spine", "脊柱", "jizhu", "back", "脊椎"],
-    "Chest": ["chest", "Chest", "胸部", "xiongbu", "thorax"],
-    "Neck": ["neck", "Neck", "脖子", "bozi", "颈部", "jingbu"],
-    "Head": ["head", "Head", "头部", "toubu", "头", "tou", "skull"],
-    "Shoulder": ["shoulder", "Shoulder", "肩膀", "jianbang", "肩", "jian"],
-    "UpperArm": ["Upper_Arm","upperarm", "UpperArm", "上臂", "shangbi", "大臂", "dabi"],
-    "LowerArm": ["Lower_Arm","lowerarm", "LowerArm", "前臂", "qianbi", "小臂", "xiaobi"],
-    "Hand": ["_Hand","hand", "Hand", "手", "shou", "手掌", "shouzhang"],
-    "UpperLeg": ["upperleg", "UpperLeg", "大腿", "datui", "上腿", "shangtui"],
-    "LowerLeg": ["lowerleg", "LowerLeg", "小腿", "xiaotui", "下腿", "xiatui"],
-    "Foot": ["foot", "Foot", "脚", "jiao", "足", "zu", "脚掌", "jiaozhang"]
-  },
-  "side_identifiers": {
-    "left": ["left", "左", "l", "_l", ".l", "_left", ".left", "-l", "-left", "L", "_L", ".L"],
-    "right": ["right", "右", "r", "_r", ".r", "_right", ".right", "-r", "-right", "R", "_R", ".R"]
-  }
+    "version": "1.0",
+    "last_updated": "2023-12-01",
+    "mappings": {
+        "Hips": ["hip", "hips", "Hip", "Hips", "骨盆", "pelvis", "root", "body", "腰部", "yaobu"],
+        "Spine": ["spine", "Spine", "脊柱", "jizhu", "back", "脊椎"],
+        "Chest": ["chest", "Chest", "胸部", "xiongbu", "thorax"],
+        "Neck": ["neck", "Neck", "脖子", "bozi", "颈部", "jingbu"],
+        "Head": ["head", "Head", "头部", "toubu", "头", "tou", "skull"],
+        "Shoulder": ["shoulder", "Shoulder", "肩膀", "jianbang", "肩", "jian"],
+        "UpperArm": ["Upper_Arm","upperarm", "UpperArm", "上臂", "shangbi", "大臂", "dabi"],
+        "LowerArm": ["Lower_Arm","lowerarm", "LowerArm", "前臂", "qianbi", "小臂", "xiaobi"],
+        "Hand": ["_Hand","hand", "Hand", "手", "shou", "手掌", "shouzhang"],
+        "UpperLeg": ["upperleg", "UpperLeg", "大腿", "datui", "上腿", "shangtui"],
+        "LowerLeg": ["lowerleg", "LowerLeg", "小腿", "xiaotui", "下腿", "xiatui"],
+        "Foot": ["foot", "Foot", "脚", "jiao", "足", "zu", "脚掌", "jiaozhang"],
+        # 手指骨骼
+        "Thumb": ["thumb", "Thumb", "拇指", "muzhi"],
+        "Index": ["index", "Index", "食指", "shizhi"],
+        "Middle": ["middle", "Middle", "中指", "zhongzhi"],
+        "Ring": ["ring", "Ring", "无名指", "wumingzhi"],
+        "Pinky": ["pinky", "Pinky", "小指", "xiaozhi"]
+    },
+    "side_identifiers": {
+        "left": ["left", "左", "l", "_l", ".l", "_left", ".left", "-l", "-left", "L", "_L", ".L"],
+        "right": ["right", "右", "r", "_r", ".r", "_right", ".right", "-r", "-right", "R", "_R", ".R"]
+    },
+    "bone_categories": {
+        "core": ["Hips", "Spine", "Chest", "Neck", "Head"],
+        "arms": ["Shoulder", "UpperArm", "LowerArm", "Hand"],
+        "legs": ["UpperLeg", "LowerLeg", "Foot"],
+        "fingers": ["Thumb", "Index", "Middle", "Ring", "Pinky"]
+    }
 }
