@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-08-31",
+  "mappings": {
+    "Hips": ["hip", "hips", "Hip", "Hips", "骨盆", "pelvis", "root", "body", "腰部", "yaobu"],
+    "Spine": ["spine", "Spine", "脊柱", "jizhu", "back", "脊椎"],
+    "Chest": ["chest", "Chest", "胸部", "xiongbu", "thorax"],
+    "Neck": ["neck", "Neck", "脖子", "bozi", "颈部", "jingbu"],
+    "Head": ["head", "Head", "头部", "toubu", "头", "tou", "skull"],
+    "Shoulder": ["shoulder", "Shoulder", "肩膀", "jianbang", "肩", "jian"],
+    "UpperArm": ["upperarm", "UpperArm", "上臂", "shangbi", "大臂", "dabi"],
+    "LowerArm": ["lowerarm", "LowerArm", "前臂", "qianbi", "小臂", "xiaobi"],
+    "Hand": ["hand", "Hand", "手", "shou", "手掌", "shouzhang"],
+    "UpperLeg": ["upperleg", "UpperLeg", "大腿", "datui", "上腿", "shangtui"],
+    "LowerLeg": ["lowerleg", "LowerLeg", "小腿", "xiaotui", "下腿", "xiatui"],
+    "Foot": ["foot", "Foot", "脚", "jiao", "足", "zu", "脚掌", "jiaozhang"]
+  },
+  "side_identifiers": {
+    "left": ["left", "左", "l", "_l", ".l", "_left", ".left", "-l", "-left", "L", "_L", ".L"],
+    "right": ["right", "右", "r", "_r", ".r", "_right", ".right", "-r", "-right", "R", "_R", ".R"]
+  }
+}
