@@ -1,5 +1,5 @@
 {
-    "version": "1.1",
+    "version": "1.2",
     "last_updated": "2024-12-01",
     "mappings": {
         "Hips": ["hip", "hips", "Hip", "Hips", "骨盆", "pelvis", "root", "body", "腰部", "yaobu"],
