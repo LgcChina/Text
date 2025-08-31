@@ -8,9 +8,9 @@
     "Neck": ["neck", "Neck", "脖子", "bozi", "颈部", "jingbu"],
     "Head": ["head", "Head", "头部", "toubu", "头", "tou", "skull"],
     "Shoulder": ["shoulder", "Shoulder", "肩膀", "jianbang", "肩", "jian"],
-    "UpperArm": ["upperarm", "UpperArm", "上臂", "shangbi", "大臂", "dabi"],
-    "LowerArm": ["lowerarm", "LowerArm", "前臂", "qianbi", "小臂", "xiaobi"],
-    "Hand": ["hand", "Hand", "手", "shou", "手掌", "shouzhang"],
+    "UpperArm": ["Upper_Arm","upperarm", "UpperArm", "上臂", "shangbi", "大臂", "dabi"],
+    "LowerArm": ["Lower_Arm","lowerarm", "LowerArm", "前臂", "qianbi", "小臂", "xiaobi"],
+    "Hand": ["_Hand","hand", "Hand", "手", "shou", "手掌", "shouzhang"],
     "UpperLeg": ["upperleg", "UpperLeg", "大腿", "datui", "上腿", "shangtui"],
     "LowerLeg": ["lowerleg", "LowerLeg", "小腿", "xiaotui", "下腿", "xiatui"],
     "Foot": ["foot", "Foot", "脚", "jiao", "足", "zu", "脚掌", "jiaozhang"]
