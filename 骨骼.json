@@ -24,9 +24,9 @@
     "legs": {
       "name": "腿部骨骼",
       "bones": {
-        "UpperLeg": ["upperleg", "UpperLeg", "大腿", "datui", "上腿", "shangtui", "Upper_Leg", "upper_leg"],
-        "LowerLeg": ["lowerleg", "LowerLeg", "小腿", "xiaotui", "下腿", "xiatui", "Lower_Leg", "lower_leg"],
-        "Foot": ["foot", "Foot", "脚", "jiao", "足", "zu", "脚掌", "jiaozhang"],
+        "UpperLeg": ["upperleg", "UpperLeg", "大腿", "datui", "上腿", "shangtui", "Upper_Leg", "upper_leg", "leg"],
+        "LowerLeg": ["lowerleg", "LowerLeg", "小腿", "xiaotui", "下腿", "xiatui", "Lower_Leg", "lower_leg", "knee"],
+        "Foot": ["foot", "Foot", "脚", "jiao", "足", "zu", "脚掌", "jiaozhang", "ankle"],
         "Toe": ["toe", "Toe", "脚趾", "jiaozhi", "toes", "Toes"]
       }
     },
