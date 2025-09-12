@@ -1,6 +1,6 @@
 {
-  "version": "2.9",
-  "last_updated": "2025-08-31",
+  "version": "3.0",
+  "last_updated": "2025-09-13",
   "bone_regions": {
     "core": {
       "name": "核心骨骼",
@@ -18,7 +18,7 @@
         "Shoulder": ["shoulder", "Shoulder", "肩膀", "jianbang", "肩", "jian"],
         "UpperArm": ["upperarm", "UpperArm", "上臂", "shangbi", "大臂", "dabi", "Upper_Arm", "upper_arm","arm"],
         "LowerArm": ["lowerarm", "LowerArm", "前臂", "qianbi", "小臂", "xiaobi", "Lower_Arm", "lower_arm","elbow"],
-        "Hand": ["hand", "Hand", "手", "shou", "手掌", "shouzhang","uwrist"]
+        "Hand": ["hand", "Hand", "手", "shou", "手掌", "shouzhang","wrist"]
       }
     },
     "legs": {
