@@ -41,6 +41,13 @@
       }
     }
   },
+      "Other": {
+      "name": "额外增加",
+      "bones": {
+        "Thumb": ["breast", "Breast"]
+      }
+    }
+  },
   "side_identifiers": {
     "left": ["left", "左", "l", "_l", ".l", "_left", ".left", "-l", "-left", "L", "_L", ".L"],
     "right": ["right", "右", "r", "_r", ".r", "_right", ".right", "-r", "-right", "R", "_R", ".R"]
