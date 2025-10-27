@@ -152,7 +152,6 @@
     "fingers": {
       "name": "手指骨骼",
       "bones": {
-        // 大拇指
         "Thumb": [
           "thumb",
           "Thumb",
@@ -190,7 +189,7 @@
           "Thumb_Distal_R"
         ],
 
-        // 食指
+
         "Index": [
           "index",
           "Index",
@@ -228,7 +227,7 @@
           "Index_Distal_R"
         ],
 
-        // 中指
+
         "Middle": [
           "middle",
           "Middle",
@@ -266,7 +265,7 @@
           "Middle_Distal_R"
         ],
 
-        // 无名指
+
         "Ring": [
           "ring",
           "Ring",
@@ -304,7 +303,7 @@
           "Ring_Distal_R"
         ],
 
-        // 小指
+
         "Pinky": [
           "pinky",
           "Pinky",
