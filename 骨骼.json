@@ -1,6 +1,6 @@
 {
-  "version": "3.3",
-  "last_updated": "2025-10-27",
+  "version": "3.1",
+  "last_updated": "2025-09-13",
   "bone_regions": {
     "core": {
       "name": "核心骨骼",
@@ -156,189 +156,61 @@
           "thumb",
           "Thumb",
           "拇指",
-          "muzhi"
-        ],
-        "Thumb_Proximal": [
+          "muzhi",
           "Thumb_Proximal",
           "Thumb Proximal",
-          "拇指近节",
-          "muzhi jinjie",
-          "Mixamorig_LeftHandThumb1",
-          "Thumb_Proximal_L",
-          "Mixamorig_RightHandThumb1",
-          "Thumb_Proximal_R"
-        ],
-        "Thumb_Intermediate": [
           "Thumb_Intermediate",
           "Thumb Intermediate",
-          "拇指中节",
-          "muzhi zhongjie",
-          "Mixamorig_LeftHandThumb2",
-          "Thumb_Intermediate_L",
-          "Mixamorig_RightHandThumb2",
-          "Thumb_Intermediate_R"
-        ],
-        "Thumb_Distal": [
           "Thumb_Distal",
-          "Thumb Distal",
-          "拇指远节",
-          "muzhi yuanjie",
-          "Mixamorig_LeftHandThumb3",
-          "Thumb_Distal_L",
-          "Mixamorig_RightHandThumb3",
-          "Thumb_Distal_R"
+          "Thumb Distal"
         ],
-
-
         "Index": [
           "index",
           "Index",
           "食指",
-          "shizhi"
-        ],
-        "Index_Proximal": [
+          "shizhi",
           "Index_Proximal",
           "Index Proximal",
-          "食指近节",
-          "shizhi jinjie",
-          "Mixamorig_LeftHandIndex1",
-          "Index_Proximal_L",
-          "Mixamorig_RightHandIndex1",
-          "Index_Proximal_R"
-        ],
-        "Index_Intermediate": [
           "Index_Intermediate",
           "Index Intermediate",
-          "食指中节",
-          "shizhi zhongjie",
-          "Mixamorig_LeftHandIndex2",
-          "Index_Intermediate_L",
-          "Mixamorig_RightHandIndex2",
-          "Index_Intermediate_R"
-        ],
-        "Index_Distal": [
           "Index_Distal",
-          "Index Distal",
-          "食指远节",
-          "shizhi yuanjie",
-          "Mixamorig_LeftHandIndex3",
-          "Index_Distal_L",
-          "Mixamorig_RightHandIndex3",
-          "Index_Distal_R"
+          "Index Distal"
         ],
-
-
         "Middle": [
           "middle",
           "Middle",
           "中指",
-          "zhongzhi"
-        ],
-        "Middle_Proximal": [
+          "zhongzhi",
           "Middle_Proximal",
           "Middle Proximal",
-          "中指近节",
-          "zhongzhi jinjie",
-          "Mixamorig_LeftHandMiddle1",
-          "Middle_Proximal_L",
-          "Mixamorig_RightHandMiddle1",
-          "Middle_Proximal_R"
-        ],
-        "Middle_Intermediate": [
           "Middle_Intermediate",
           "Middle Intermediate",
-          "中指中节",
-          "zhongzhi zhongjie",
-          "Mixamorig_LeftHandMiddle2",
-          "Middle_Intermediate_L",
-          "Mixamorig_RightHandMiddle2",
-          "Middle_Intermediate_R"
-        ],
-        "Middle_Distal": [
           "Middle_Distal",
-          "Middle Distal",
-          "中指远节",
-          "zhongzhi yuanjie",
-          "Mixamorig_LeftHandMiddle3",
-          "Middle_Distal_L",
-          "Mixamorig_RightHandMiddle3",
-          "Middle_Distal_R"
+          "Middle Distal"
         ],
-
-
         "Ring": [
           "ring",
           "Ring",
           "无名指",
-          "wumingzhi"
-        ],
-        "Ring_Proximal": [
+          "wumingzhi",
           "Ring_Proximal",
           "Ring Proximal",
-          "无名指近节",
-          "wumingzhi jinjie",
-          "Mixamorig_LeftHandRing1",
-          "Ring_Proximal_L",
-          "Mixamorig_RightHandRing1",
-          "Ring_Proximal_R"
-        ],
-        "Ring_Intermediate": [
           "Ring_Intermediate",
           "Ring Intermediate",
-          "无名指中节",
-          "wumingzhi zhongjie",
-          "Mixamorig_LeftHandRing2",
-          "Ring_Intermediate_L",
-          "Mixamorig_RightHandRing2",
-          "Ring_Intermediate_R"
-        ],
-        "Ring_Distal": [
           "Ring_Distal",
-          "Ring Distal",
-          "无名指远节",
-          "wumingzhi yuanjie",
-          "Mixamorig_LeftHandRing3",
-          "Ring_Distal_L",
-          "Mixamorig_RightHandRing3",
-          "Ring_Distal_R"
+          "Ring Distal"
         ],
-
-
         "Pinky": [
           "pinky",
           "Pinky",
           "小指",
-          "xiaozhi"
-        ],
-        "Pinky_Proximal": [
+          "xiaozhi",
           "Pinky_Proximal",
           "Pinky Proximal",
-          "小指近节",
-          "xiaozhi jinjie",
-          "Mixamorig_LeftHandPinky1",
-          "Pinky_Proximal_L",
-          "Mixamorig_RightHandPinky1",
-          "Pinky_Proximal_R"
-        ],
-        "Pinky_Intermediate": [
           "Pinky_Intermediate",
           "Pinky Intermediate",
-          "小指中节",
-          "xiaozhi zhongjie",
-          "Mixamorig_LeftHandPinky2",
-          "Pinky_Intermediate_L",
-          "Mixamorig_RightHandPinky2",
-          "Pinky_Intermediate_R"
-        ],
-        "Pinky_Distal": [
           "Pinky_Distal",
-          "Pinky Distal",
-          "小指远节",
-          "xiaozhi yuanjie",
-          "Mixamorig_LeftHandPinky3",
-          "Pinky_Distal_L",
-          "Mixamorig_RightHandPinky3",
-          "Pinky_Distal_R"
+          "Pinky Distal"
         ]
       }
     },
