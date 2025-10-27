@@ -301,7 +301,6 @@
   },
   "side_identifiers": {
     "left": [
-      "Mixamorig_Left",
       "left",
       "左",
       "l",
@@ -316,7 +315,6 @@
       ".L"
     ],
     "right": [
-      "Mixamorig_Right",
       "right",
       "右", 
       "r",
