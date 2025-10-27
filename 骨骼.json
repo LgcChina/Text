@@ -266,6 +266,7 @@
           "pinky proximal",
           "Pinky_Proximal",
           "Pinky Proximal",
+          "Little_Proximal",
           "小指1",
           "小指近节"
         ],
@@ -275,6 +276,7 @@
           "pinky intermediate",
           "Pinky_Intermediate",
           "Pinky Intermediate", 
+          "Little_Intermediate",
           "小指2",
           "小指中节"
         ],
@@ -284,6 +286,7 @@
           "pinky distal",
           "Pinky_Distal",
           "Pinky Distal",
+          "Little_Distal",
           "小指3",
           "小指远节"
         ]
