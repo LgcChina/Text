@@ -1,0 +1,94 @@
+# VPM 包简易发布流程（参考文档）
+## 适用范围
+本流程为 VRChat Creator Companion（VCC）兼容的 Unity 编辑器工具 VPM 包**简化版发布流程**，省去非必要步骤（如示例目录、许可证、Git 忽略文件配置等），仅保留核心发布环节，适配快速发布需求。
+
+## 核心规范（前置必看）
+1. **命名规范**：
+   - 包核心目录：采用 `com.开发者标识.包名-功能描述` 格式（全小写 + 连字符，例：`com.username.tool-name`）；
+   - 固定目录：编辑器代码统一存放至 `Editor/` 目录（Unity 规范，仅编辑器生效，不打入运行时包）。
+2. **版本规范**：初始版本建议从 `1.0.0` 开始，迭代遵循语义化版本（bug 修复→`1.0.1`，功能新增→`1.1.0`）；
+3. **兼容版本**：Unity 版本优先选择 `2022.3`（适配 VRChat 主流版本），VRChat SDK 依赖版本统一填写 `3.x.x`（兼容所有 3.x 系列版本）。
+
+## 详细发布流程
+### 步骤 1：创建 GitHub 仓库（使用官方模板）
+1. 访问 VRChat 社区 VPM 包模板：https://github.com/vrchat-community/template-package/generate；
+2. 填写仓库基础信息：
+   - Repository name：填写包的核心名称（例：`UnityToolVpmPackage`）；
+   - Description：简要说明包的核心功能；
+   - 选择仓库可见性（推荐 `Public`），点击 `Create repository from template` 完成创建。
+
+### 步骤 2：搭建 VPM 包目录结构
+在仓库根目录下，按以下简易结构创建文件夹/文件（仅保留核心内容）：
+```
+仓库根目录/
+├── com.开发者标识.包名-功能描述/  # 包核心目录（小写+连字符）
+│   ├── Editor/  # 固定目录：存放编辑器代码
+│   │   └── 工具核心代码.cs  # 工具的核心脚本文件
+│   └── package.json  # VPM 核心配置文件（唯一必填配置文件）
+└── README.md  # 可选：仅简要说明工具功能，无需复杂文档
+```
+
+### 步骤 3：配置 package.json（简易模板）
+> 注意：JSON 格式不支持注释，以下模板为纯可直接使用的 JSON 内容，字段含义见后续“package.json 字段说明”。
+```json
+{
+  "name": "com.开发者标识.包名-功能描述",
+  "displayName": "工具展示名称",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "工具核心功能简要描述",
+  "author": {
+    "name": "开发者名称",
+    "url": "开发者 GitHub 主页地址"
+  },
+  "vpmDependencies": {
+    "com.vrchat.base": "3.x.x",
+    "com.vrchat.worlds": "3.x.x",
+    "com.vrchat.avatars": "3.x.x"
+  },
+  "keywords": [ "VRChat", "Unity", "工具核心关键词1", "工具核心关键词2" ]
+}
+```
+
+#### package.json 字段说明
+| 字段名         | 填写要求与说明                                                                 |
+|----------------|--------------------------------------------------------------------------------|
+| name           | 必须与包核心目录名完全一致，格式为 `com.开发者标识.包名-功能描述`（全小写+连字符） |
+| displayName    | VCC 中显示的包名称，可包含中文/大写（例：BlendShape 上限调整工具）               |
+| version        | 初始填 `1.0.0`，后续按语义化版本迭代（如 bug 修复改 `1.0.1`）                   |
+| unity          | 固定填 `2022.3`，适配 VRChat 主流 Unity 版本                                   |
+| description    | 1-2 句话简要说明工具功能，无需冗余（例：调整 SkinnedMeshRenderer 中 BlendShape 上限） |
+| author         | 填写开发者名称和 GitHub 主页地址，便于用户溯源                                 |
+| vpmDependencies| 无 VRChat SDK 依赖则留空 `{}`；需适配头像/世界则保留模板内内容                  |
+| keywords       | 填写核心关键词，便于 VCC 检索（至少包含 `VRChat` 和 `Unity`）                   |
+
+### 步骤 4：填充核心代码
+将工具的编辑器代码文件放入 `Editor/` 目录，确保代码仅依赖 Unity 编辑器 API 或指定的 VRChat SDK 版本，无需额外配置。
+
+### 步骤 5：提交代码并通过 Actions 发布
+1. 将本地文件推送到 GitHub 仓库（无需创建 LICENSE、.gitignore 等文件）；
+2. 触发 GitHub Actions 发布：
+   - 进入仓库主页 → 点击顶部 `Actions` 选项卡；
+   - 在左侧列表中找到 `Build Release` 工作流；
+   - 点击 `Run workflow`，选择要发布的分支（默认 `main`），确认后运行工作流；
+   - 等待工作流执行完成，仓库会自动生成对应版本的 Release 包。
+
+### 步骤 6：VCC 验证安装
+1. 打开 VRChat Creator Companion（VCC）；
+2. 进入 `Settings` → `Packages` → `Add Repository`；
+3. 输入仓库地址（格式：`https://github.com/用户名/仓库名.git`），点击添加；
+4. 验证包是否能被 VCC 正常识别、安装，工具功能是否可正常运行。
+
+## 注意事项
+1. **依赖配置**：
+   - 工具仅依赖 Unity 原生 API → `vpmDependencies` 留空 `{}`；
+   - 工具需适配 VRChat 头像/世界 → 保留 `base + worlds + avatars` 依赖；
+2. **目录命名**：包核心目录的 `com.开发者标识.xxx` 前缀需与 `package.json` 中 `name` 字段完全一致；
+3. **非必要文件**：无需创建 LICENSE、.gitignore、示例目录等文件，简化发布流程；
+4. **Actions 注意**：若 `Build Release` 工作流未自动生效，需确认仓库模板的 Actions 配置未被修改，或手动检查工作流文件是否存在。
+
+## 模板复用提示
+发布新 VPM 包时，仅需：
+1. 替换包核心目录名、`package.json` 中的 `name`/`displayName`/`description`/`keywords`；
+2. 将新工具代码放入 `Editor/` 目录；
+3. 推送代码后在 Actions 中运行 `Build Release` 工作流即可完成发布。
